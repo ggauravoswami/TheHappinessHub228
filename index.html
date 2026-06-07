@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamics of Happiness</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🌈 Dynamics of Happiness</h1>
+
+    <p id="quote">
+        Happiness is not by chance, but by choice.
+    </p>
+
+</header>
+
+<section class="hero">
+
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200" alt="nature">
+
+</section>
+
+<section class="card">
+
+    <h2>How Are You Feeling Today?</h2>
+
+    <select id="mood">
+        <option>Happy</option>
+        <option>Sad</option>
+        <option>Angry</option>
+        <option>Confused</option>
+        <option>Stressed</option>
+        <option>Excited</option>
+    </select>
+
+    <button onclick="showAdvice()">
+        Get Advice
+    </button>
+
+    <p id="result"></p>
+
+</section>
+
+<section class="card">
+
+    <h2>Breathing Activity</h2>
+
+    <div class="breathing"></div>
+
+</section>
+
+<section class="card">
+
+    <h2>Gratitude Journal</h2>
+
+    <textarea placeholder="Write 3 things you're thankful for..."></textarea>
+
+</section>
+
+<section class="card">
+
+    <h2>Random Happiness Quote</h2>
+
+    <button onclick="newQuote()">
+        New Quote
+    </button>
+
+    <p id="randomQuote"></p>
+
+</section>
+
+<section class="card">
+
+    <h2>Nature Sounds</h2>
+
+    <audio controls>
+
+        <source src="nature.mp3" type="audio/mpeg">
+
+    </audio>
+
+</section>
+
+<section class="card">
+
+    <h2>Relaxing Video</h2>
+
+    <iframe
+    width="100%"
+    height="400"
+    src="https://www.youtube.com/embed/lFcSrYw-ARY">
+    </iframe>
+
+</section>
+
+<section class="activities">
+
+<h2>8 Happiness Activities</h2>
+
+<div class="grid">
+
+<div class="activity">😊 Smile Challenge</div>
+
+<div class="activity">📝 Gratitude Writing</div>
+
+<div class="activity">🌳 Nature Walk</div>
+
+<div class="activity">🎵 Listen to Music</div>
+
+<div class="activity">💪 Quick Exercise</div>
+
+<div class="activity">📚 Read Inspiration</div>
+
+<div class="activity">🤝 Act of Kindness</div>
+
+<div class="activity">🧘 Meditation</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>Catch The Smile Game</h2>
+
+<button onclick="score++ ; document.getElementById('score').innerHTML=score">
+😄 Catch Smile
+</button>
+
+<h3 id="score">0</h3>
+
+</section>
+
+<footer>
+
+Keep smiling. Every day is a fresh start. ✨
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ <section class="card">
+    <h2>🎯 Happiness Quiz</h2>
+
+    <p>How often do you smile each day?</p>
+
+    <select id="quiz1">
+        <option value="5">Many Times</option>
+        <option value="3">Sometimes</option>
+        <option value="1">Rarely</option>
+    </select>
+
+    <p>Do you practice gratitude?</p>
+
+    <select id="quiz2">
+        <option value="5">Every Day</option>
+        <option value="3">Sometimes</option>
+        <option value="1">Never</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculateQuiz()">
+        Calculate Happiness Score
+    </button>
+
+    <h3 id="quizResult"></h3>
+</section>
+      <section class="card">
+
+<h2>🌤 Daily Mood Tracker</h2>
+
+<select id="dailyMood">
+
+<option>😀 Happy</option>
+<option>😐 Neutral</option>
+<option>😔 Sad</option>
+
+</select>
+
+<button onclick="saveMood()">
+Save Mood
+</button>
+
+<p id="moodHistory"></p>
+
+</section>
+      <section class="card">
+
+<h2>🎨 Color Therapy</h2>
+
+<button onclick="changeColor('#A8E6CF')">
+Calm Green
+</button>
+
+<button onclick="changeColor('#FFD3B6')">
+Warm Peach
+</button>
+
+<button onclick="changeColor('#AFCBFF')">
+Peace Blue
+</button>
+
+</section>
+      <section class="card">
+
+<h2>🌟 Message To Future You</h2>
+
+<textarea id="futureMessage"
+placeholder="Write something encouraging...">
+</textarea>
+
+<button onclick="saveMessage()">
+Save
+</button>
+
+<p id="savedMessage"></p>
+
+</section>
+      <section class="card">
+
+<h2>🎁 Kindness Challenge</h2>
+
+<button onclick="kindnessChallenge()">
+Give Me A Challenge
+</button>
+
+<h3 id="challenge"></h3>
+
+</section>
+      <section class="card">
+
+<h2>🏆 Happiness Badges</h2>
+
+<button onclick="earnBadge()">
+Complete Activity
+</button>
+
+<div id="badges"></div>
+
+</section>
+      <section class="card">
+
+<h2>📸 Happy Moments</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/300?1">
+
+<img src="https://picsum.photos/300?2">
+
+<img src="https://picsum.photos/300?3">
+
+<img src="https://picsum.photos/300?4">
+
+</div>
+
+</section>
+  <section class="card">
+
+<h2>🧘 Breathing Exercise</h2>
+
+<div class="breathing"></div>
+
+<h3 id="breathText">
+Breathe In...
+</h3>
+
+</section>
+  <section class="card">
+
+<h2>🎮 Find The Happiness</h2>
+
+<div id="gameArea"></div>
+
+<h3 id="gameScore">0</h3>
+
+</section>
+  
+      
